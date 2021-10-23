@@ -1,21 +1,23 @@
 div.results{
  text-align: center;
 }
-/* Commentaire */
+
+
 div.result{
   display: inline-block;
   background-color:rgb(207, 207, 207);
   width: 250px;
   height: 150px;
-  padding-top: 0%;
   border-radius: 10px;
-  margin:10px;
+  margin: 10px;
+  transition: 1s;
 }
-div.result{
-  background-color:rgb(207, 207, 207);
-  width: 260px;
-  height: 160px;
-  border-radius: 10px;
-  margin:5px;
-  margin-bottom:0px;
+div.result:hover{
+  transition: 0s;
+  box-shadow: 5px 5px 5px black;
 }
+/*la box-shadow : x px y px z px color se décale de x pixels sur
+la droite, y sur la gauche et est 2*z pixels plus grand que la box
+où on l'applique*/
+/*la transition est le temps que met l'effet pour passer de l'effet
+d'avant à l'effet voulu dans les prop où il y a transition*/
